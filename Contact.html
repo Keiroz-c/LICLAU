@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>En-tête E-commerce</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>LICLAU</h1> <!-- Remplacez par votre logo ou nom -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="panier">
+      <a href="#">Panier <span id="panier-count">0</span></a> <!-- Le nombre d'articles sera mis à jour dynamiquement -->
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Contenu principal du site -->
+</main>
+
+</body>
+</html>
+
+
+
+<style>
+header {
+  background-color: #35424a;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+.panier {
+  font-weight: bold;
+}
+
+/* Responsive design (adapté à différentes tailles d'écran) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empile les éléments verticalement sur petit écran */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+  }
+  nav ul {
+    flex-direction: column; /* Empile les éléments de navigation */
+  }
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+}
+</style>
+
+
+
+
+<main>
+    <section id="apropos">
+        <h2>À propos de LICLAU</h2>
+        <p>LICLAU est une entreprise dédiée à la création de casque VR. Nous nous engageons à fournir les meilleurs services et produits à nos clients. Notre équipe est passionnée et expérimentée, prête à vous aider dans tous vos besoins.</p>
+        <p>Notre mission est de crée un casque VR qui feras en sorte que vous soyez a 100% dans l'univers du jeu. Contactez-nous pour en savoir plus sur nos services.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <br><br><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <br><br><label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 LICLAU. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
